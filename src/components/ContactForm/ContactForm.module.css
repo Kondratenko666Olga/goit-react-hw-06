@@ -2,4 +2,9 @@
     display: flex;
     flex-direction:  column;
     gap: 5px;
+    color: black;
+}
+
+.form input {
+    color: black;
 }

@@ -1,14 +1,13 @@
 import PropTypes from 'prop-types';
 import styles from './Contact.module.css';
 
-const Contact = ({id, name, number, onDelete}) => {
+const Contact = ({name, number}) => {
     return (
         <div className={styles.contact}>
             <ul className={styles.contactList}>
                 <li className={styles.contactName}>{name}</li>
                 <li className={styles.contactNumber}>{number}</li>
             </ul>
-            <button className={styles.deleteBtn} onClick={() => onDelete(id)}>Delete</button>
         </div>
     )
 };
